@@ -159,6 +159,12 @@ git reset --hard commit-hash
 Hard reset repository to the specified commit. The working directory lose the
 changes AND commits after the specified one will be lost.
 
+### Using revert
+
+git revert commit-hash
+Creates a new commit with reversed/undid changes. As a new commit, it will
+require a commit message.
+
 ### Description
 
 This is the first file in this repo.
