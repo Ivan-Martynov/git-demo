@@ -88,6 +88,20 @@ Reapply changes from the stash.
 git stash apply
 Apply stuff from the stash without removing it from the stash.
 
+git stash list
+View all stashes.
+
+git stash drop stash_id
+Remove the stash with a given id.
+
+git stash clear
+Remove all stashes.
+
+## Undoing changes
+
+git checkout commit_id
+Checkout to a particular commit.
+
 ### Description
 
 This is the first file in this repo.
