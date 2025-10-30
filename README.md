@@ -102,6 +102,10 @@ Remove all stashes.
 git checkout commit_id
 Checkout to a particular commit.
 
+git checkout HEAD~1
+Refer to one commit prior the HEAD. Instead of number 1 the user can use other
+values to represent a commit prior the HEAD.
+
 ### Description
 
 This is the first file in this repo.
