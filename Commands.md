@@ -165,3 +165,18 @@ changes AND commits after the specified one will be lost.
 git revert commit-hash
 Creates a new commit with reversed/undid changes. As a new commit, it will
 require a commit message.
+
+## Fetch & Pull
+
+### Using fetch
+
+git fetch remote-name branch-name
+Fetches from a specified repository and branch (if not given, uses the default
+branch - typically named 'origin') updating remote tracking branches -
+it does not override current workspace files.
+
+### Using pull
+
+git pull remote-name branch-name
+Retrieve changes from a remote repository. Updates the HEAD branch with the
+retrieved data. Updates local files.
