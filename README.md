@@ -43,6 +43,8 @@ Logs of the commits.
 
 ## Branching
 
+### Using branch
+
 git branch
 View existing branches.
 
@@ -58,9 +60,13 @@ regardless of its status.
 git branch -m branch-new-name
 Rename a branch.
 
+### Using switch
+
 git switch branch-name
 Switch to a branch. Using with option '-c' it will create a new branch and
 switch to it (git switch -c new-branch-name).
+
+### Using checkout
 
 git checkout branch-name
 Historically, this command was used to switch branches. Better to use switch.
@@ -72,8 +78,12 @@ Merge changes from a specific branch into the current branch.
 
 ## Cloning
 
+### Using clone
+
 git clone repo-url
 Clone/download a repository.
+
+### Using remote
 
 git remote
 View existing remotes.
@@ -111,6 +121,8 @@ Remove all stashes.
 
 ## Undoing changes
 
+### Using checkout
+
 git checkout commit-id
 Checkout to a particular commit.
 
@@ -123,6 +135,8 @@ Revert the file provided by file-name to the state it was at HEAD.
 Another way to do the same thing is to call 'git checkout -- file-name' (the
 HEAD was replaced with --).
 
+### Using restore
+
 git restore file-name
 Restore the file to the contents it had in the HEAD. Basically, it is the same
 command as 'git checkout HEAD file-name'.
@@ -134,6 +148,8 @@ example, HEAD~2 to take the commit second prior the HEAD).
 git restore --staged file-name
 Remove a file from the staging area. It doesn't delete or modify the file - it
 only becomes unstaged.
+
+### Using reset
 
 git reset commit-hash
 Reset repository to the specified commit. The working directory will still
