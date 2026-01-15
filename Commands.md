@@ -180,3 +180,13 @@ it does not override current workspace files.
 git pull remote-name branch-name
 Retrieve changes from a remote repository. Updates the HEAD branch with the
 retrieved data. Updates local files.
+
+## Rebasing
+
+Rebase command is used in two main ways:
+
+1. Alternative to merge;
+2. Cleanup tool.
+
+git rebase -i HEAD~4
+Change commit(s) after the specified one. In this example, commit four.
